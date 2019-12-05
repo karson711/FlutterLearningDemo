@@ -2,22 +2,20 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget{
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Padding布局')
-        ),
+        appBar: AppBar(title: Text('Padding布局')),
         body: LayOutDemo(),
       ),
     );
   }
 }
 
-class LayOutDemo extends StatelessWidget{
+class LayOutDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -28,40 +26,66 @@ class LayOutDemo extends StatelessWidget{
         childAspectRatio: 1.7,
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
-            child: Image.network('https://www.itying.com/images/flutter/1.png',fit: BoxFit.cover,)
-          ),
+              padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
+              child: Image.network(
+                'https://www.itying.com/images/flutter/1.png',
+                fit: BoxFit.cover,
+              )),
           Padding(
               padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
-              child: Image.network('https://www.itying.com/images/flutter/2.png',fit: BoxFit.cover,)
-          ),
+              child: Image.network(
+                'https://www.itying.com/images/flutter/2.png',
+                fit: BoxFit.cover,
+              )),
           Padding(
               padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
-              child: Image.network('https://www.itying.com/images/flutter/3.png',fit: BoxFit.cover,)
-          ),
+              child: Image.network(
+                'https://www.itying.com/images/flutter/3.png',
+                fit: BoxFit.cover,
+              )),
           Padding(
               padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
-              child: Image.network('https://www.itying.com/images/flutter/4.png',fit: BoxFit.cover,)
-          ),
+              child: Image.network(
+                'https://www.itying.com/images/flutter/4.png',
+                fit: BoxFit.cover,
+              )),
           Padding(
               padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
-              child: Image.network('https://www.itying.com/images/flutter/5.png',fit: BoxFit.cover,)
-          ),
+              child: Image.network(
+                'https://www.itying.com/images/flutter/5.png',
+                fit: BoxFit.cover,
+              )),
           Padding(
               padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
-              child: Image.network('https://www.itying.com/images/flutter/6.png',fit: BoxFit.cover,)
-          ),
+              child: Image.network(
+                'https://www.itying.com/images/flutter/6.png',
+                fit: BoxFit.cover,
+              )),
           Padding(
               padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
-              child: Image.network('https://www.itying.com/images/flutter/1.png',fit: BoxFit.cover,)
-          ),
+              child: Image.network(
+                'https://www.itying.com/images/flutter/1.png',
+                fit: BoxFit.cover,
+              )),
           Padding(
               padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
-              child: Image.network('https://www.itying.com/images/flutter/2.png',fit: BoxFit.cover,)
-          )
-
+              child: Image.network(
+                'https://www.itying.com/images/flutter/2.png',
+                fit: BoxFit.cover,
+              ))
         ],
       ),
+    );
+  }
+}
+
+class Test extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return Container(
+      child: Image(image: null),
+      height: 100,
     );
   }
 }
