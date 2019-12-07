@@ -2,22 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'res/listData.dart';
 
-void main() => runApp(MyApp());
-
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return MaterialApp(
-        home: Scaffold(
-          appBar: AppBar(title: Text('Table样式')),
-          body: HomeContent(),
-        ));
-  }
-}
-
-class HomeContent extends StatelessWidget {
+class TableDemo extends StatelessWidget {
 
   //自定义方法
   Widget _getListData(context,index){
