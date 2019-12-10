@@ -16,7 +16,8 @@ class _HomePageState extends State<HomePage> {
         RaisedButton(
             child: Text('基本路由传值'),
             onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) {
                 return ProductDetailPage();
               }));
             }),
@@ -24,10 +25,30 @@ class _HomePageState extends State<HomePage> {
         RaisedButton(
             child: Text('命名路由传值'),
             onPressed: () {
-              Navigator.of(context).pushNamed('/productinfo',arguments: {
-                'pid':456
-              });
-            })
+              Navigator.of(context)
+                  .pushNamed('/productinfo', arguments: {'pid': 456});
+            }),
+        SizedBox(height: 20),
+        RaisedButton(
+          child: Text("跳转到登录页面"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/login');
+          },
+        ),
+        SizedBox(height: 20),
+        RaisedButton(
+          child: Text("跳转到注册页面"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/registerFirst');
+          },
+        ),
+        SizedBox(height: 20),
+        RaisedButton(
+          child: Text("跳转AppBarDemo页面"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/appBarDemo');
+          },
+        ),
       ],
     );
   }

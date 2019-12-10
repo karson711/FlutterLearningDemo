@@ -1,7 +1,7 @@
 // This is a generated file; do not edit or check into version control.
 FLUTTER_ROOT=/Users/anfa/Documents/flutter
-FLUTTER_APPLICATION_PATH=/Users/anfa/FlutterProjects/flutter_app
-FLUTTER_TARGET=/Users/anfa/FlutterProjects/flutter_app/lib/main.dart
+FLUTTER_APPLICATION_PATH=/Users/anfa/Flutter学习/FlutterLearningDemo
+FLUTTER_TARGET=/Users/anfa/Flutter学习/FlutterLearningDemo/lib/Pages/main.dart
 FLUTTER_BUILD_DIR=build
 SYMROOT=${SOURCE_ROOT}/../build/ios
 FLUTTER_FRAMEWORK_DIR=/Users/anfa/Documents/flutter/bin/cache/artifacts/engine/ios

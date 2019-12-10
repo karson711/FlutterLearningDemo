@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
     // TODO: implement build
     return MaterialApp(
 //        home: Tabs()
+    debugShowCheckedModeBanner: false,
     initialRoute: '/',//初始化的时候加载的路由
       onGenerateRoute: prefix0.onGenerateRoute,
     );
